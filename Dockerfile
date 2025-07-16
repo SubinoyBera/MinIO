@@ -1,6 +1,5 @@
 FROM minio/minio
 
-EXPOSE 9000
-EXPOSE 9001
+EXPOSE 10000
 
-CMD ["server", "/data", "--console-address", ":9001"]
+CMD ["server", "/data", "--address", ":10000", "--console-address", ":10000"]
